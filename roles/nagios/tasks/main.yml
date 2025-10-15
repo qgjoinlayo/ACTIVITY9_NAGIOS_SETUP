@@ -1,0 +1,13 @@
+---
+# tasks file for roles/nagios
+- name: Install Nagios on Ubuntu
+  apt:
+    name: nagios3
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: Install Nagios on CentOS
+  yum:
+    name: nagios
+    state: present
+  when: ansible_os_family == "RedHat"

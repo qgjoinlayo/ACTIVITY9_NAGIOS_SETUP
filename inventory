@@ -1,0 +1,5 @@
+[ubuntu]
+192.168.56.104 ansible_user=inlayo ansible_ssh_private_key_file=~/.ssh/id_ed25519
+
+[centos]
+192.168.56.105 ansible_user=ginlayo ansible_ssh_private_key_file=~/.ssh/id_ed25519
